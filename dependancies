@@ -1,0 +1,16 @@
+numpy 
+scipy
+keras
+tensorflow
+matplotlib
+pandas
+pywavelets
+scikit-image
+joblib
+sklearn
+setuptools>=41.0.0
+tqdm
+wandb
+coolname
+pydot
+graphviz
