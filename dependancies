@@ -7,6 +7,7 @@ pandas
 pywavelets
 scikit-image
 joblib
+hera_sim
 sklearn
 setuptools>=41.0.0
 tqdm
