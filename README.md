@@ -1,4 +1,4 @@
-# DL4DI
+# `DL4DI`: Deep learning for data inspection
 A repository containing the implementation of the paper entitled "Deep Learning Assisted Data Inspection for Radio Astronomy"
 
 ## Usage
