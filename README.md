@@ -23,4 +23,3 @@ Run the following given the correctly generated training files
 
 ## Notes
 - The logging and visualisation data is dependant on wandb (https://www.wandb.com/)
-- You need to install hera_sim from source it will not build from the dependancies file
