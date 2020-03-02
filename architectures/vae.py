@@ -96,7 +96,7 @@ def get_vae(verbose=False):
     decoder = Model(latent_inputs, outputs, name='decoder')
     if verbose:
         decoder.summary()
-    plot_model(decoder, to_file='outputs/vae_cnn_decoder.png', show_shapes=True)
+        plot_model(decoder, to_file='outputs/vae_cnn_decoder.png', show_shapes=True)
 
     # instantiate VAE model
     outputs = decoder(encoder(inputs)[2])
