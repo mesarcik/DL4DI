@@ -170,10 +170,10 @@ def get_arguments():
 
     config['architecture'] = args.architecture[0]
     config['training_data'] = args.training_data[0]
-    config['latent_dim'] = int(args.latent_dim[0])
     config['name'] = generate_slug()
 
     if args.notes is not None:  config['Notes'] = args.notes[0]
+    if args.latent_dim is not None:  config['latent_dim'] = int(args.latent_dim[0])
     if args.wandb is not None: config['wandb'] = int(args.wandb[0])
     else:args.wandb = True 
 
