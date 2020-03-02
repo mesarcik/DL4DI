@@ -1,7 +1,16 @@
 # `DL4DI`: Deep learning for data inspection
 A repository containing the implementation of the paper entitled "Deep Learning Assisted Data Inspection for Radio Astronomy"
 
-## Dependancies
+## Installtion
+Install conda environment by:
+``` 
+    conda create --name dl4di_test python=3.7
+``` 
+Run conda environment by:
+``` 
+    conda activate dl4di_test
+``` 
+
 Install dependancies by running:
 ``` 
     pip install -r requirements
