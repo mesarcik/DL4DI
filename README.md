@@ -1,7 +1,14 @@
 # `DL4DI`: Deep learning for data inspection
 A repository containing the implementation of the paper entitled "Deep Learning Assisted Data Inspection for Radio Astronomy"
 
+## Dependancies
+Install dependancies by running:
+``` 
+    pip install -r requirements
+``` 
 ## Usage
+
+You need to create the training set using either `generate_hera_data.py` or `generate_lofar_data.py` (given you have access to the preprocessed lofar `.hdf5` files).
 
 ### Data set creation
 For HERA data creation run the following from inside the data_generation directory
