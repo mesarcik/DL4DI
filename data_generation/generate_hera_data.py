@@ -5,7 +5,7 @@
     Misha Mesarcik 2020
 """
 
-import aipy, uvtools
+import aipy 
 import numpy as np
 import pandas as pd
 import pylab as plt
