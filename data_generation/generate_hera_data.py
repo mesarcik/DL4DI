@@ -145,21 +145,21 @@ def make_dataset(n,n_features):
     return np.swapaxes(np.array(data),1,3),np.array(label)
 
 def main():
-    for n_features in [5,2,3,4,6]:
-        data,labels = make_dataset(10,n_features)
-
     if not os.path.exists('datasets'):
         os.mkdir('datasets')
 
-    info = {'Description':'Hera training set, with geometric baseline delay randomized',
-            'Features':pd.unique(labels),
-            'Dimensions':(64,256),
-            'Source':'HERA Simulator'}
+    for n_features in [5,2,3,4,6]:
+        data,labels = make_dataset(10,n_features)
+        
+        info = {'Description':'Hera training set, with geometric baseline delay randomized',
+                'Features':pd.unique(labels),
+                'Dimensions':(64,256),
+                'Source':'HERA Simulator'}
 
-    f_name = 'datasets/HERA_{}_{}.pkl'.format(n_features,datetime.datetime.now().strftime("%d-%m-%Y"))
-    pickle.dump([data,np.zeros([1,1,1,1]),labels, np.zeros([1,1,1,1]),info],
-            open(f_name, 'wb'), protocol=4)
-    print('{} Saved!'.format(f_name))
+        f_name = 'datasets/HERA_{}_{}.pkl'.format(n_features,datetime.datetime.now().strftime("%d-%m-%Y"))
+        pickle.dump([data,np.zeros([1,1,1,1]),labels, np.zeros([1,1,1,1]),info],
+                open(f_name, 'wb'), protocol=4)
+        print('{} Saved!'.format(f_name))
     
 
 if __name__ =='__main__':
