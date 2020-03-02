@@ -5,6 +5,7 @@
 import numpy as np
 import datetime
 from tqdm import tqdm
+import os
 
 import sys
 sys.path.insert(1,'../')
@@ -27,6 +28,9 @@ def data_generator(num_files ):
             output = p.get_processed_cube()
             first_flag = True
         else: output = np.concatenate((output,p.get_processed_cube()),axis=0)
+
+    if not os.path.exists('datasets'):
+        os.mkdir('datasets')
 
     np.save('datasets/lofar_dataset.MS_{}.npz'.format(datetime.datetime.now().strftime('%b-%d-%I%M%p-%G')),
             (output,np.zeros([1,1,1,1]),np.ones([1,1,1,1]),np.ones([1,1,1,1])))
