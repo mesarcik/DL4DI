@@ -30,7 +30,7 @@ For HERA data creation run the following from inside the data_generation directo
 
 For LOFAR dataset creation run the following from inside the data_generation directory given that the 'path' field is specified correctly in `config.py` and you have the correctly preprocessed `.h5` LOFAR spectrograms available. The downsampled dataset may be found at: https://doi.org/10.5281/zenodo.3702430. 
 
-_Note that in order to use this dataset it, each of the `.zip` files need to be extracted to the directory specified in 'path'_
+_Note that in order to use this dataset, each of the `.zip` files need to be extracted to the directory specified in 'path'_
 
 
 ``` 
