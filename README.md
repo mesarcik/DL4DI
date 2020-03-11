@@ -45,3 +45,7 @@ Run the following given the correctly generated training files
 
 ## Notes
 - The logging and visualisation data is dependant on wandb (https://www.wandb.com/)
+
+## Licensing
+Source code of DL4DI are licensed under the Apache License, version 2.0.
+
