@@ -43,6 +43,24 @@ Run the following given the correctly generated training files
     python3 train.py <training_file> <archtitecutre> -p <wandb_project> -l <latent_dim>
 ```
 
+## Reference this work
+```
+@article{10.1093/mnras/staa1412,
+    author = {Mesarcik, Michael and Boonstra, Albert-Jan and Meijer, Christiaan and Jansen, Walter and Ranguelova, Elena and van Nieuwpoort, Rob V},
+    title = "{Deep Learning Assisted Data Inspection for Radio Astronomy}",
+    journal = {Monthly Notices of the Royal Astronomical Society},
+    year = {2020},
+    month = {05},
+    issn = {0035-8711},
+    doi = {10.1093/mnras/staa1412},
+    url = {https://doi.org/10.1093/mnras/staa1412},
+    note = {staa1412},
+    eprint = {https://academic.oup.com/mnras/advance-article-pdf/doi/10.1093/mnras/staa1412/33319604/staa1412.pdf},
+}
+```
+
+
+
 ## Notes
 - The logging and visualisation data is dependant on wandb (https://www.wandb.com/)
 
