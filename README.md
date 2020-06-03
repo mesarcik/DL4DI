@@ -1,7 +1,7 @@
 [![DOI](https://zenodo.org/badge/242111858.svg)](https://zenodo.org/badge/latestdoi/242111858)
 
 
-# `DL4DI`: Deep learning for data inspection
+# `DL4DI`: Deep Learning Assisted Data Inspection for Radio Astronomy
 A repository containing the implementation of the paper entitled "Deep Learning Assisted Data Inspection for Radio Astronomy"
 
 ## Installation 
