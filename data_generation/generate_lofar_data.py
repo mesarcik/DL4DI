@@ -3,6 +3,7 @@
     Misha Mesarcik 2019
 '''
 import numpy as np
+import pickle
 import datetime
 from tqdm import tqdm
 import os
@@ -32,11 +33,18 @@ def data_generator(num_files ):
     if not os.path.exists('datasets'):
         os.mkdir('datasets')
 
-    np.save('datasets/lofar_dataset.MS_{}.npz'.format(datetime.datetime.now().strftime('%b-%d-%I%M%p-%G')),
-            (output,np.zeros([1,1,1,1]),np.ones([1,1,1,1]),np.ones([1,1,1,1])))
+    info = {'Description':'LOFAR training set',
+            'Features':'Unlabelled' ,
+            'Dimensions':(32,128),
+            'Source':'LOFAR MS'}
 
+
+    f_name = 'datasets/LOFAR_dataset_{}.pkl'.format(datetime.datetime.now().strftime("%d-%m-%Y"))
+    pickle.dump([output,np.zeros([1,1,1,1]), np.zeros([1,1,1,1]),np.zeros([1,1,1,1]),info],
+            open(f_name, 'wb'), protocol=4)
+    print('{} Saved!'.format(f_name))
 def main():
-    data_generator(327)
+    data_generator(2)
 
 if __name__ == '__main__':
     main()
