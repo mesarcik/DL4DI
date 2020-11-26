@@ -1,6 +1,6 @@
 numpy 
 scipy
-keras
+keras==2.2.4
 tensorflow
 matplotlib
 pandas
