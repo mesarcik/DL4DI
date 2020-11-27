@@ -1,7 +1,6 @@
 numpy 
-scipy
 keras==2.2.4
-tensorflow===1.14.0
+tensorflow
 matplotlib
 pandas
 pywavelets
