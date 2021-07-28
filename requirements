@@ -6,7 +6,7 @@ pandas
 pywavelets
 scikit-image
 joblib
-git+git://github.com/HERA-Team/hera_sim
+git+git://github.com/HERA-Team/hera_sim@a9666b3aa3a5412511054b325c6e5224ca9c8c2a
 git+git://github.com/RadioAstronomySoftwareGroup/pyradiosky
 sklearn
 setuptools>=41.0.0
